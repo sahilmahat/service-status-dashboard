@@ -49,11 +49,11 @@ app.post("/api/deploy-info", (req, res) => {
   );
 
   res.json({
-    message: "Deployment  info updated successfully"
+    message: "Deployment  info updated successfully "
   });
 });
 
 
 app.listen(PORT,"0.0.0.0",() => {
-  console.log(`server is running on port ${PORT}`);
+  console.log(`server is running on port  ${PORT}`);
 });
