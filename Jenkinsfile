@@ -51,7 +51,7 @@ pipeline{
                   -H "Content-Type: application/json" \
                   -d '{
                     "build": "${BUILD_NUMBER}",
-                    "version": "${GIT_COMMIT}"
+                    "version": "v${BUILD_NUMBER}"
                   }'
                 """
             }
