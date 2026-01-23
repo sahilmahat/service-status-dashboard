@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -54,6 +54,6 @@ app.post("/api/deploy-info", (req, res) => {
 });
 
 
-app.listen(PORT,"0.0.0.0" () => {
+app.listen(PORT,"0.0.0.0",() => {
   console.log(`server is running on port ${PORT}`);
 });
