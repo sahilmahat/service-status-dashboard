@@ -1,4 +1,7 @@
  Service Status Dashboard – CI/CD Monitoring Project
+
+Architecture Diagram
+
 ![diagram](diagram/CICD_project.webp)
  
 📌 Project Overview
