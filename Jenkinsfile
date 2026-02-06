@@ -42,7 +42,7 @@ pipeline{
         stage("Update Dashboard") {
             steps {
                 sh """
-                  curl -X POST http://3.110.139.212/api/deploy-info \
+                  curl -X POST http://3.110.139.212:5000/api/deploy-info \
                   -H "Content-Type: application/json" \
                   -d '{
                     "build": "${BUILD_NUMBER}",
