@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     environment {
-        IMAGE_NAME = "snesh111/service-status-dashboard:latest"
+        IMAGE_NAME = "sahilmahat/service-status-dashboard:latest"
     }
 
     stages{
@@ -14,7 +14,7 @@ pipeline{
         stage("docker build "){
             steps{
                 sh  '''
-                docker build -t snesh111/service-status-dashboard:latest .
+                docker build -t sahilmahat/service-status-dashboard:latest .
                 '''
             }
         }
@@ -35,7 +35,7 @@ pipeline{
         stage('Docker Push') {
             steps {
                 sh '''
-                  docker push snesh111/service-status-dashboard:latest
+                  docker push sahilmahat/service-status-dashboard:latest
                 '''
             }
         }
