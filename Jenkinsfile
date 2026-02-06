@@ -11,11 +11,6 @@ pipeline{
                 checkout scm
             }
         }
-        stage("install Dependence "){
-            steps{
-                sh 'npm install'
-            }
-        }
         stage("docker build "){
             steps{
                 sh  '''
